@@ -1,3 +1,4 @@
+gem "mysql", ">= 2.8.1"
 gem "haml", ">= 3.0.13"
 gem "compass", ">= 0.10.2"
 gem "will_paginate", :git => "git://github.com/mislav/will_paginate.git", :branch => 'rails3'
@@ -106,10 +107,11 @@ file ".gitignore", <<-END
 .DS_Store
 .bundle
 db/*.sqlite3
+config/database.yml
 log/*.log
 tmp/**/*
 public/stylesheets/compiled/**
 END
 git :init
 git :add => "."
-git :commit => %Q(-am "build a rails3 app by flyerhzm's rails3-template")
+git :commit => %Q(-am "build a rails3 app by holin's rails3-template")
